@@ -10,10 +10,42 @@
 
 /* Medium view port (tablet) */
 @media only screen and (max-width: 768px){
-  
+    .calculator-container{
+        width: $spancol;
+    }
+    .calculator-frame{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subheader-note{
+        font-size: 0.9em;
+    }
+    .sidebar-container{
+        height: 100vh;
+    }
 }
 
 /* Small view port (phone) */
 @media only screen and (max-width: 480px){
-  
+    h1{
+      font-size: 1.6em;
+    }
+    h2{
+      font-size: 1.3em;
+    }
+    .subheader-note{
+      font-size: 0.7em;
+    }
+    .article-container{
+      width: $spancol;
+    }
+    .sidebar-container{
+      display: none;
+    }
+    .subheader-container{
+      width: $spancol;
+    }
+    .btn{
+      font-size: 0.85em;
+    }
 }

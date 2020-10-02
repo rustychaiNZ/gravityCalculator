@@ -1,6 +1,7 @@
 form{
     width: $spancol;
     display: flex;
+    flex-wrap: wrap;
 }
 .calculator-container{
 	width: 6*$col;
@@ -15,7 +16,6 @@ form{
     border-radius: 35px;
     width: 100%;
     max-width: 450px;
-    margin-top: 2em;
     padding: 1.5em;
 }
 .calculator-display{
@@ -58,7 +58,7 @@ form{
     border-width: 1px 0;
 }
 .calculator-std-table td,th{
-    padding: 0.5em;
+    padding: 0.65em;
 }
 .t-align-right{
     text-align: right;
