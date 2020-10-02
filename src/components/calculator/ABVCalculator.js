@@ -29,14 +29,14 @@ class ABVCalculator extends Component {
         })
     }
     handleSubmit = event =>{
-        let alcoholDERT = 0.789
         let formOutSg = this.state.sg
         let formOutFg = this.state.fg
         let formOutAbv = ((formOutSg-formOutFg)*131.5).toFixed(2)
-        let formOutStd330 = (0.33 * formOutAbv * alcoholDERT).toFixed(2)
-        let formOutStd750 = (0.75 * formOutAbv * alcoholDERT).toFixed(2)
-        let formOutStd1250 = (1.25 * formOutAbv * alcoholDERT).toFixed(2)
-        let formOutStd2000 = (1.25 * formOutAbv * alcoholDERT).toFixed(2)
+        let dertByAbv = 0.789 * formOutAbv
+        let formOutStd330 = (0.33 * dertByAbv).toFixed(2)
+        let formOutStd750 = (0.75 * dertByAbv).toFixed(2)
+        let formOutStd1250 = (1.25 * dertByAbv).toFixed(2)
+        let formOutStd2000 = (1.25 * dertByAbv).toFixed(2)
         this.setState({
             formOutSg,
             formOutFg,

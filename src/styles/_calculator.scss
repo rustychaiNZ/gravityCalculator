@@ -6,8 +6,9 @@ form{
 	width: 6*$col;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-	padding: 1.2em;
+    align-items: flex-start;
+    align-content: flex-start;
+	padding: 4em 1.2em;
 }
 .calculator-frame{
     border: 2px solid $outlineColor;
