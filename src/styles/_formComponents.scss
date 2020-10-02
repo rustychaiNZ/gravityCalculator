@@ -1,0 +1,98 @@
+// form animations
+.btn-animation:hover{
+    transition: 0.25s;
+    transform: translateY(-0.2em);
+}
+
+.field{
+    font-size: 1.2em;
+    color: $white;
+    display: block;
+    width: $spancol;
+    padding: 1em;
+    margin: 15px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $outlineColor;
+    border-radius: 50px;
+    transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
+    transition-property: border-color, box-shadow;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+.field:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    transform: translateY(-0.15em);
+    box-shadow: 2px 2px 5px $shadowColor;
+}
+.field:focus{
+    border: 2px solid $white;
+}
+.field-paragraph{
+    font-size: 1.2em;
+    color: $white;
+    display: block;
+    width: $spancol;
+    height: 100px;
+    padding: 1em;
+    margin: 15px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $outlineColor;
+    border-radius: 50px;
+    transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
+    transition-property: border-color, box-shadow;
+    transition-duration: 0.25s, 0.25s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+.field-paragraph:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    transform: translateY(-0.15em);
+    box-shadow: 2px 2px 5px $shadowColor;
+}
+.field-paragraph:focus{
+    border: 2px solid $white;
+}
+.btn{
+    display: inline-block;
+    font-size: 1.1em;
+    padding: 0.45em;
+    border: 2px solid;
+    border-radius: 50px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn-primary{
+    border-color: $primaryColor;
+    color: $primaryColor;
+}
+
+.btn-primary:hover{
+    border-color: $primaryColorHover;
+    color: $primaryColorHover;
+}
+.btn-primary:focus{
+    background-color: $primaryColorHover;
+    border-color: $primaryColorHover;
+    color: $white;
+    box-shadow: 0px 0px 15px $primaryColorHover;
+}
+.btn-secondary{
+    border-color: $secondaryColor;
+    color: $secondaryColor;
+}
+.btn-secondary:hover{
+    border-color: $secondaryColorHover;
+    color: $secondaryColorHover;
+}
+.btn-secondary:focus{
+    background-color: $secondaryColorHover;
+    border-color: $secondaryColorHover;
+    color: $white;
+    box-shadow: 0px 0px 15px $secondaryColorHover;
+}

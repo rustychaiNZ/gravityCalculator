@@ -1,0 +1,64 @@
+form{
+    width: $spancol;
+    display: flex;
+}
+.calculator-container{
+	width: 6*$col;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+	padding: 1.2em;
+}
+.calculator-frame{
+    border: 2px solid $outlineColor;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 450px;
+    margin-top: 2em;
+    padding: 1.5em;
+}
+.calculator-display{
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0.25em;
+}
+.calculator-btn-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+}
+.calculator-standarddrink-container{
+    width: $spancol;
+    display: flex;
+}
+
+// Standard drink calculator
+.calculator-std-title{
+    font-size: 2em;
+    text-align: center;
+}
+.calculator-std-table{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: $spancol;
+    max-width: 450px;
+    color: $white;
+}
+.calculator-std-table thead{
+    font-size: 1.3em;
+}
+.calculator-std-table tbody{
+    font-size: 1.1em;
+    padding: 1em;
+}
+.calculator-std-table td{
+    border: solid $outlineColor;
+    border-width: 1px 0;
+}
+.calculator-std-table td,th{
+    padding: 0.5em;
+}
+.t-align-right{
+    text-align: right;
+}

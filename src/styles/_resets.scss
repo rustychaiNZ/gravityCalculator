@@ -1,0 +1,101 @@
+*, div, body, html{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-x: hidden;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+//FORM RESET
+input{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip:padding-box;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+  border-radius:0;
+  -webkit-appearance:none;
+  background-color:transparent;
+  outline:0;
+  margin:0;
+  padding:0;
+  text-align: left;
+  font-size:1em;
+  height: 1em;
+  vertical-align: middle;
+  border: none;
+}
+textarea{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip:padding-box;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  -ms-border-radius:0;
+  -o-border-radius:0;
+  border-radius:0;
+  -webkit-appearance:none;
+  background-color:transparent;
+  outline:0;
+  margin:0;
+  padding:0;
+  text-align: left;
+  font-size:1em;
+  height: 1em;
+  vertical-align: middle;
+  border: none;
+}
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    text-align: center;
+    display: block;
+    outline: none;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}

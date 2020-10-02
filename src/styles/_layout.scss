@@ -1,0 +1,101 @@
+// Size variables
+$col: 8.33%;
+$spancol: 100%;
+$mar: 1em;
+
+
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.f-start{
+	align-items: flex-start;
+}
+
+// Main Containers
+.container{
+	background-color: $backgroundColor;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100vh;
+	width: 100%;
+}
+.header-container{
+	background-color: $accentColor;
+	width: $spancol;
+	padding: 1.5*$mar;
+	height: 12vh;
+	display: flex;
+	align-items: center;
+	border: solid $outlineColor;
+	border-width: 0 0 1px 0;
+}
+.header-title{
+	width: 8*$col;
+	display: flex;
+	align-items: center;
+}
+.header-button{
+	width: 4*$col;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.subheader-container{
+	background-color: $accentColor;
+	padding: 1em;
+	width: 11*$col;
+	height: 7vh;
+	display: flex;
+	align-items: center;
+	border: solid $outlineColor;
+	border-width: 0 0 1px 0;
+}
+.subheader-title{
+	width: 6*$col;
+}
+.subheader-description{
+	width: 6*$col;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.sidebar-container{
+	width: $col;
+	background-color: $accentColor;
+	height: 88vh;
+	display: fixed;
+	float: left;
+	border: solid $outlineColor;
+	border-width: 0 1px 0 0;
+}
+.article-container{
+	display: flex;
+	align-items: center;
+	width: 11*$col;
+	min-height: 81vh;
+}
+// Main containers end
+
+.d-flex{
+	display: flex;
+}
+.d-block{
+	display: block;
+}
+
+.mr-1{
+	margin-right: 1em;
+}
+
+.col-12{
+	width: $spancol;
+	float: left;
+}
+
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
