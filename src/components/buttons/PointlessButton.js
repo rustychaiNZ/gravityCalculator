@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Modal from '../layout/Modal'
+import Modal from '../layout/PunModal'
 
 class PointlessButton extends Component {
     
@@ -15,9 +15,7 @@ class PointlessButton extends Component {
     render(){
         return (
             <>
-                <Modal show={this.state.show} handleClose={this.hideModal} heading={`Here's a Pun`}
-                
-                />
+                <Modal show={this.state.show} handleClose={this.hideModal} heading={`Here's a Pun`}/>
                 <button className="btn btn-animation btn-tertiary" type="button" onClick={this.showModal}>
                     Pointless Button
                 </button>

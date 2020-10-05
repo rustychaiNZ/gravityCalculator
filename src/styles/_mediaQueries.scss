@@ -47,11 +47,17 @@
     .sidebar-container{
       display: none;
     }
+    .header-container{
+      width: $spancol;
+    }
     .subheader-container{
       width: $spancol;
     }
     .btn{
       font-size: 0.85em;
+    }
+    .modal-main{
+      width: $spancol;
     }
 }
 
