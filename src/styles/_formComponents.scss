@@ -14,7 +14,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: $outlineColor;
-    border-radius: 50px;
+    border-radius: $borderRadius;
     transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
     transition-property: border-color, box-shadow;
     transition-duration: 0.25s, 0.25s;
@@ -25,7 +25,7 @@
     cursor: pointer;
     transition: 0.25s;
     transform: translateY(-0.15em);
-    box-shadow: 2px 2px 5px $shadowColor;
+    box-shadow: $shadow;
 }
 .field:focus{
     border: 2px solid $white;
@@ -41,7 +41,7 @@
     border-width: 2px;
     border-style: solid;
     border-color: $outlineColor;
-    border-radius: 50px;
+    border-radius: $borderRadius;
     transition: border-color .25s ease-in-out,box-shadow .25s ease-in-out;
     transition-property: border-color, box-shadow;
     transition-duration: 0.25s, 0.25s;
@@ -52,7 +52,7 @@
     cursor: pointer;
     transition: 0.25s;
     transform: translateY(-0.15em);
-    box-shadow: 2px 2px 5px $shadowColor;
+    box-shadow: $shadow;
 }
 .field-paragraph:focus{
     border: 2px solid $white;
@@ -62,7 +62,12 @@
     font-size: 1.1em;
     padding: 0.45em;
     border: 2px solid;
-    border-radius: 50px;
+    border-radius: $borderRadius;
+}
+.btn-lg{
+    font-size: 1.5em;
+    padding: 0.45em;
+    min-width: 100px;
 }
 .btn:hover{
     cursor: pointer;
@@ -80,7 +85,8 @@
     background-color: $primaryColorHover;
     border-color: $primaryColorHover;
     color: $white;
-    box-shadow: 0px 0px 15px $primaryColorHover;
+    box-shadow: 1px 1px 5px $primaryColorHover;
+    box-shadow: -1px -1px -5px $primaryColorHover;
 }
 .btn-secondary{
     border-color: $secondaryColor;
@@ -94,5 +100,18 @@
     background-color: $secondaryColorHover;
     border-color: $secondaryColorHover;
     color: $white;
-    box-shadow: 0px 0px 15px $secondaryColorHover;
+    box-shadow: 0px 0px 5px $secondaryColorHover;
+}
+.btn-tertiary{
+    border-color: $tertiaryColor;
+    color: $tertiaryColor;
+}
+.btn-tertiary:hover{
+    border-color: $tertiaryColorHover;
+    color: $tertiaryColorHover;
+}
+.btn-tertiary:focus{
+    background-color: $tertiaryColorHover;
+    color: $white;
+    box-shadow: 0px 0px 5px $tertiaryColorHover;
 }

@@ -1,0 +1,131 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.modal-display{
+    display: block;
+    animation: fadeIn ease 0.33s;
+    -webkit-animation: fadeIn ease 0.33s;
+    -moz-animation: fadeIn ease 0.33s;
+    -o-animation: fadeIn ease 0.33s;
+    -ms-animation: fadeIn ease 0.33s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.modal-hide{
+    display: none;
+    animation: fadeOut ease 0.33s;
+    -webkit-animation: fadeOut ease 0.33s;
+    -moz-animation: fadeOut ease 0.33s;
+    -o-animation: fadeOut ease 0.33s;
+    -ms-animation: fadeOut ease 0.33s;
+}
+@keyframes fadeOut {
+    100% {opacity:1;}
+    0% {opacity:0;}
+    }
+    
+  @-moz-keyframes fadeOut {
+      100% {opacity:1;}
+      0% {opacity:0;}
+  }
+  @-webkit-keyframes fadeOut {
+      100% {opacity:1;}
+      0% {opacity:0;}
+  }
+  @-o-keyframes fadeOut {
+      100% {opacity:1;}
+      100% {opacity:0;}
+  }
+  @-ms-keyframes fadeOut {
+      100% {opacity:1;}
+      0% {opacity:0;}
+  }
+.modal-main {
+    position: absolute;
+    background: $backgroundColor;
+    width: 7*$col;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: $borderRadius;
+    box-shadow: $modalShadow;
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    width: $spancol;
+    border: solid $outlineColor;
+    border-width: 0px 0px 1px 0px ;
+    min-height: 5vh;
+    padding: 2em;
+    .modal-header-title{
+        width: 11*$col;
+        h3{
+            font-size: 2.3em;
+        }
+    }
+    .modal-header-close{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        width: 1*$col;
+    }
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: $spancol;
+    min-height: 20vh; 
+    padding: 2em;
+    p{
+        font-size: 1.8em;
+        font-family: cursive;
+    }
+}
+.modal-footer{
+    width: $spancol;
+    background-color: $accentColor;
+    min-height: 5vh;
+    padding: 2em;
+    border-radius: 0 0 $borderRadius $borderRadius;
+}
+
+.btn-close{
+    font-size: 2.3em;
+    color: $outlineColor;
+}
+.btn-close:hover{
+    color: $shadowColor;
+    cursor: pointer;
+    transition: 0.33s;
+    transform: scale(0.9);
+}

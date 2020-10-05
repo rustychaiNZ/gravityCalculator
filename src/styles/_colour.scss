@@ -2,10 +2,15 @@ $backgroundColor: #202227;
 $accentColor: #303133;
 
 $white: #EDEDED;
-$primaryColor: #57AEFF;
+$primaryColor: #2687e2 ;
 $primaryColorHover: #57AEFF;
-$secondaryColor: #FF5757;
-$secondaryColorHover: #FF5757;
+$secondaryColor: rgb(212, 44, 44);
+$secondaryColorHover: #FF5757 ;
+$tertiaryColor: #1b6d13;
+$tertiaryColorHover: #139108;
 
 $shadowColor: #313131;
-$outlineColor: #616161
+$outlineColor: #616161;
+
+$shadow: 2px 2px 5px $shadowColor;
+$modalShadow: 6px 6px 35px #000000;

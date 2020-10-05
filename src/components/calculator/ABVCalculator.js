@@ -36,7 +36,7 @@ class ABVCalculator extends Component {
         let formOutStd330 = (0.33 * dertByAbv).toFixed(2)
         let formOutStd750 = (0.75 * dertByAbv).toFixed(2)
         let formOutStd1250 = (1.25 * dertByAbv).toFixed(2)
-        let formOutStd2000 = (1.25 * dertByAbv).toFixed(2)
+        let formOutStd2000 = (2 * dertByAbv).toFixed(2)
         this.setState({
             formOutSg,
             formOutFg,
@@ -53,10 +53,10 @@ class ABVCalculator extends Component {
             sg : '',
             fg : '',
             abv : 0,
-            formOutstd330 : '',
-            formOutstd750 : '',
-            formOutstd1250 : '',
-            formOutstd2000 : '',
+            formOutStd330 : '',
+            formOutStd750 : '',
+            formOutStd1250 : '',
+            formOutStd2000 : '',
             formOutAbv : 'ABV'
         })
     }

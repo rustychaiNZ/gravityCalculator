@@ -2,6 +2,8 @@
 $col: 8.33%;
 $spancol: 100%;
 $mar: 1em;
+$padTop: 3em;
+$borderRadius: 50px;
 
 
 .flex-row{
@@ -24,13 +26,14 @@ $mar: 1em;
 }
 .header-container{
 	background-color: $accentColor;
-	width: $spancol;
+	width: 11*$col;
+	float: right;
 	padding: 1.5*$mar;
 	height: 12vh;
 	display: flex;
 	align-items: center;
 	border: solid $outlineColor;
-	border-width: 0 0 1px 0;
+	border-width: 0 0 1px 1px;
 }
 .header-title{
 	width: 8*$col;
@@ -48,10 +51,11 @@ $mar: 1em;
 	padding: 1em;
 	width: 11*$col;
 	height: 7vh;
+	float: right;
 	display: flex;
 	align-items: center;
 	border: solid $outlineColor;
-	border-width: 0 0 1px 0;
+	border-width: 0 0 1px 1px;
 }
 .subheader-title{
 	width: 6*$col;
@@ -64,19 +68,18 @@ $mar: 1em;
 .sidebar-container{
 	width: $col;
 	background-color: $accentColor;
-	// position: absolute;
-	min-height: 88vh;
+	min-height: 100vh;
 	position: sticky;
+	z-index: 99;
 	top: 0;
 	float: left;
-	border: solid $outlineColor;
-	border-width: 0 1px 0 0;
 }
 .article-container{
 	display: flex;
 	flex-wrap: wrap;
 	width: 11*$col;
 	min-height: 81vh;
+	padding-top: $padTop;
 }
 // Main containers end
 
@@ -85,6 +88,9 @@ $mar: 1em;
 }
 .d-block{
 	display: block;
+}
+.display-none {
+    display: none;
 }
 
 .mr-1{

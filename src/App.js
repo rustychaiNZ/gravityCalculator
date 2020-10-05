@@ -10,8 +10,8 @@ import Article from './components/layout/Article'
 const App = () => {
 	return (
 		<Container>
-			<SiteHeader/>
 			<SideBar/>
+			<SiteHeader/>
 			<SubHeader/>
 			<Article/>
 		</Container>
