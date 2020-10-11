@@ -82,15 +82,12 @@ $borderRadius: 50px;
 .sidebar-container-item{
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	width: $spancol;
-	padding: 0 1em;
+	padding: 0 0.3em;
 	a{
 		text-align: center;
+		font-size: 1em;
 	}
-}
-.sidebar-nav-item{
-	font-size: 11px;
 }
 .article-container{
 	display: flex;

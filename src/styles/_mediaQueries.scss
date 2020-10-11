@@ -5,12 +5,22 @@
 
 /* Large view (desktop window) */
 @media only screen and (max-width: 1278px) {
-  
+  .sidebar-container-item{
+    padding: 0 0.2em;
+    a{
+      font-size: 0.8em;
+    }
+  }
 }
 
 /* Small desktop view */
 @media only screen and (max-width: 1024px){
-
+  .sidebar-container-item{
+    padding: 0 0.2em;
+    a{
+      font-size: 0.7em;
+    }
+  }
 }
 
 /* Medium view port (tablet) */
@@ -26,7 +36,39 @@
         font-size: 0.9em;
     }
     .sidebar-container{
-        height: 100vh;
+      padding-top: 0;
+      align-items: center;
+      top: auto;
+      bottom: 0;
+      width: $spancol;
+      min-height: 1em;
+      height: 4.33em;
+      position: fixed;
+      box-shadow: $shadow;
+    }
+    .article-container{
+      width: $spancol;
+      padding-bottom: 4.33em;
+    }
+    .header-container{
+          width: $spancol;
+    }
+    .subheader-container{
+          width: $spancol;
+    }
+    .modal-main{
+      width: 11*$col;
+    }
+    .sidebar-container-item{
+      align-items: center;
+      justify-content: center;
+      width: 3*$col;
+      a{
+        font-size: 0.9em;
+        .icon{
+          height: 3em;
+        }
+      }
     }
 }
 
@@ -41,45 +83,25 @@
     .subheader-note{
       font-size: 0.7em;
     }
-    .article-container{
-      width: $spancol;
-      padding-bottom: 4.33em;
-    }
-    .sidebar-container{
-      align-items: center;
-      top: auto;
-      bottom: 0;
-      width: $spancol;
-      min-height: 1em;
-      height: 4.33em;
-      position: fixed;
-      box-shadow: $shadow;
-    }
-    .sidebar-container-item{
-      align-items: center;
-      justify-content: center;
-      width: 3*$col;
-      height: 100%;
-    }
-    .header-container{
-      width: $spancol;
-    }
-    .subheader-container{
-      width: $spancol;
-    }
     .btn{
       font-size: 0.85em;
     }
     .modal-main{
       width: $spancol;
     }
+    .modal-body{
+      
+      p{
+        font-size: 1.5em !important;
+      }
+    }
 }
 
 @media only screen and (max-width: 360px){
     .subheader-note{
-        font-size: 0.65em;
+      font-size: 0.65em;
     }
     h2{
-        font-size: 1.2em;
-      }
+      font-size: 1.2em;
+    }
 }

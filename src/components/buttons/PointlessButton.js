@@ -7,9 +7,11 @@ class PointlessButton extends Component {
 
     showModal = () => {
         this.setState({show: true})
+        document.body.style.overflow = 'hidden'
     }
     hideModal = () => {
         this.setState({show: false})
+        document.body.style.overflow = 'unset'
     }
     
     render(){

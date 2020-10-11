@@ -1,13 +1,10 @@
 .icon{
     width: $spancol;
-    height: 50px;
+    height: 3.5vh;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    a{
-        font-size: 8px;
-    }
 }
 .icon-moustache{
     background-image: url('../components/header/uiIcons/moustacheIconPC.png');
