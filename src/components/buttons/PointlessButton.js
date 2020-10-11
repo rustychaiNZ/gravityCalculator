@@ -11,7 +11,7 @@ class PointlessButton extends Component {
     }
     hideModal = () => {
         this.setState({show: false})
-        document.body.style.overflow = 'unset'
+        document.body.style.overflow = 'unset' 
     }
     
     render(){
