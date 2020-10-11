@@ -7,7 +7,7 @@ const PunModal = ({ handleClose, show, heading }) => {
     const [punSetup, setPunSetup] = useState('')
     const [punDeliver, setPunDelivery] = useState('')
     const [loading, setLoading] = useState(true)
-    const [fetching, setfetching] = useState(false)
+    const [fetching, setfetching] = useState(false)    
 
     useEffect(() => {
        const fetchData = async() => {

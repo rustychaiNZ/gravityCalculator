@@ -1,0 +1,20 @@
+.icon{
+    width: $spancol;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    a{
+        font-size: 8px;
+    }
+}
+.icon-moustache{
+    background-image: url('../components/header/uiIcons/moustacheIconPC.png');
+}
+a:hover {
+    text-decoration: none;
+    .icon-moustache{
+        background-image: url('../components/header/uiIcons/moustacheIconSC.png');
+    }
+}

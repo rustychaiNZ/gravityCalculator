@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 100vh;
+    overflow-y: hidden;
     background: rgba(0, 0, 0, 0.6);
 }
 .modal-display{
@@ -69,6 +70,8 @@
     background: $backgroundColor;
     width: 7*$col;
     height: auto;
+    max-height: 80vh;
+    overflow: auto;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
