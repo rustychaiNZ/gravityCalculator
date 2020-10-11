@@ -6,4 +6,4 @@ function ClearButton(props) {
     )
 }
 
-export default ClearButton
+export default ClearButton 
